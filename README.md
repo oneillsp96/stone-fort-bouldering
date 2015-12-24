@@ -12,6 +12,8 @@
 
 * based on https://market.ionic.io/starters/firebaseauthstarter
 
+* live preview at http://oneillsp96.github.io/stone-fort-bouldering/www/index#/login
+
 
 
 
