@@ -1,0 +1,21 @@
+<ion-view view-title="Home" hide-back-button="true">
+        <ion-content class="padding-top">
+                <h1>Welcome to Stone Fort!</h1>
+                <button ng-click="logOut()" class="button button-clear button-positive">Logout</button>
+
+                <ion-list>
+                        <ion-item ng-repeat="problem in problems">
+                                {{problem.name}}
+                                <br/> grade: {{problem.grade}}
+                                <br/> complete?: {{problem.complete}}
+                                
+                                <form name="myForm">
+                                        <label>Complete?
+                                                <input type="checkbox" ng-model="problem.complete" ng-change="updateData(problem)">
+                                        </label>
+                                </form>
+                        </ion-item>
+                </ion-list>
+
+        </ion-content>
+</ion-view>
